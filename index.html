@@ -5,17 +5,188 @@
 <meta name="description" content="TechCCU Workshop 2014" />
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="stylesheets/normalize.css" rel="stylesheet"/>
 <link href="stylesheets/techccu_ws.css" rel="stylesheet"/>
 <script src=""></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <title>TechCCU Workshop 2014</title>
 </head>
 
 <body>
 <nav>
+navigation will be here!
 </nav>
 <div class="cover-bg"></div>
+<div class="header">
+	<h1>TechCCU Workshop</h1>
+	<span>2014</span>
+</div>
+
 <div class="contentWrap">
+<section id="about" class="section">
+
+	<div class="secHeader">
+		<h2 class="secTitle">簡介</h2>
+	</div>
+	<p>TechCCU 是由中正大學資工系學生@brucehsu 與@Terces 所發起，我們秉持技術討論與經驗分享的精神連結校內外各式的人才與我們一起交流。
+	過去一年來我們採用各種方式，如線上分享、實體聚會（Meet up）的方式進行我們的活動，隨著我們人數的增加，我們聚集到更多願意一起分享
+	的人來參與，眼見時機成熟，我們決定主辦一場為期一天的 Workshop 來讓大家共襄盛舉。 
+	</p>
+</section>
+
+<section id="info" class="section">
+
+	<div class="secHeader">
+		<h2 class="secTitle">活動資訊</h2>
+	</div>
+	
+	<p>時間: 2014年7月12日 星期六</p>
+	<p>地點: 國立中正大學工學院 EA101教室</p>
+	
+</section>
+
+<section id="info-location" class="section sectionExpand clearfix">
+	<div id="map-canvas" class="secGrid-5">
+	</div>
+	<div class="secGrid-3">
+	交通資訊will be here
+	</div>
+</section>
+
+<section id="schedule" class="section">
+
+	<div class="secHeader">
+		<h2 class="secTitle">議程</h2>
+	</div>
+	
+	<table id="scheduleTable">
+		<thead>
+		<tr>
+			<th>時間</th>
+			<th>講者</th>
+			<th>主題</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="stableTime">09:15 ~ 09:45</td>
+				<td colspan="2" class="spanCol">報到時間</td>
+			</tr>
+			<tr>
+				<td class="stableTime">09:45 ~ 10:00</td>
+				<td></td>
+				<td>Opening: 開始的時候與結束的時候</td>
+			</tr>
+			<tr>
+				<td class="stableTime">10:00 ~ 10:50</td>
+				<td>Richard Lee</td>
+				<td>Keynote[確認中]</td>
+			</tr>
+			<tr>
+				<td class="stableTime">11:00 ~ 11:30</td>
+				<td>Yungshin</td>
+				<td>TBD</td>
+			</tr>
+			<tr>
+				<td class="stableTime">11:40 ~ 12:20</td>
+				<td>Frand</td>
+				<td>TBD</td>
+			</tr>
+			<tr>
+				<td class="stableTime">12:20 ~ 13:30</td>
+				<td colspan="2" class="spanCol">午餐休息時間</td>
+			</tr>
+			<tr>
+				<td class="stableTime">13:30 ~ 14:00</td>
+				<td>icemango</td>
+				<td>Openflow introduction</td>
+			</tr>
+			<tr>
+				<td class="stableTime">14:10 ~ 15:00</td>
+				<td>Vexed</td>
+				<td>Keynote: 前端工程師與水電工的相似之處</td>
+			</tr>
+			<tr>
+				<td class="stableTime">15:00 ~ 15:30</td>
+				<td colspan="2" class="spanCol">Tea Time!</td>
+			</tr>
+			<tr>
+				<td class="stableTime">15:30 ~ 16:00</td>
+				<td>Luba</td>
+				<td>Skymizer 雲端編譯</td>
+			</tr>
+			<tr>
+				<td class="stableTime">16:10 ~ 17:00</td>
+				<td>Terces</td>
+				<td>戰爭遊戲 101</td>
+			</tr>
+			<tr>
+				<td class="stableTime">17:00 ~ 17:30</td>
+				<td></td>
+				<td>閃電秀 & 閉幕</td>
+			</tr>
+    </table>
+	
+</section>
 
 </div>
+<script>
+var map;
+function initialize() {
+
+	var mapOptions = {
+		zoom: 14,
+		center: new google.maps.LatLng(23.557652, 120.462543),
+		panControl: false,
+		zoomControl: true,
+		mapTypeControl: false,
+		scaleControl: false,
+		streetViewControl: false,
+		overviewMapControl: false,
+		styles: [
+					{
+						"featureType": "all",
+						"elementType": "all",
+						"stylers": [
+							{
+								"invert_lightness": true
+							},
+							{
+								"hue": "#ff1a00"
+							},
+							{
+								"saturation": -100
+							},
+							{
+								"lightness": 33
+							},
+							{
+								"gamma": 0.5
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#2D333C"
+							}
+						]
+					}
+				]						
+	};
+	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+
+	 var marker = new google.maps.Marker({
+		  position: new google.maps.LatLng(23.562159, 120.477802),
+		  map: map,
+	  });	
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
 </body>
 </html>
