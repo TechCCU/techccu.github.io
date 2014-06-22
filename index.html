@@ -295,24 +295,32 @@ $(document).ready(function(){
 	navItems = navbox.find("a");
 	
 	sectionList = navItems.map(function(){
-		var sec = $($(this).attr("href"));
+	
+		var href = $(this).attr("href");
 		
-		if(sec.length){
-			return sec;
+		if(href.charAt(0)==='#'){
+			var sec = $(href);
+		
+			if(sec.length){
+				return sec;
+			}
 		}
 	});
 	
 	navItems.click(function(e){
 		var target = $(this).attr("href");
-		scrollTo = (target==="#")? 0 : $(target).offset().top-topGapping+1;
+		scrollTo = (target.charAt(0)!=='#')? 0 : $(target).offset().top-topGapping+1;
 		
-		$('html, body').stop().animate(
-			{scrollTop: scrollTo}, 300);
+		if(scrollTo>0){
+			$('html, body').stop().animate(
+				{scrollTop: scrollTo}, 300);
 		
-		if($("#navbar-mBtn").is(":visible"))
-			$( "#navbar ul" ).hide();
-			
-		e.preventDefault();
+			if($("#navbar-mBtn").is(":visible"))
+				$( "#navbar ul" ).hide();
+
+			e.preventDefault();
+		}
+
 	});
 	
 	var preSecId;
