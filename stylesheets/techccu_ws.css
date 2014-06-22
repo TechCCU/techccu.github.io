@@ -237,7 +237,7 @@ margin: 0;
 
 .spkrPic{
 width: 50%;
-padding: 0 20%;
+margin-left: 30%;
 border-radius: 50%;
 -webkit-border-radius: 50%;
 -moz-border-radius: 50%;
@@ -265,3 +265,58 @@ footer a{
 color: #aaa;
 text-decoration: underline;
 }
+
+
+/*** responsive ***/
+@media screen and (max-width: 1415px) {
+	html,body{
+	
+	}
+	#map-canvas{
+		height: 440px;
+	}
+	#trafficInfo{
+		padding: 2em 2em;
+	}
+}
+
+@media screen and (max-width: 1270px) {
+
+	.grid-5{
+		width: 50%;
+	}
+	.grid-3{
+		width: 50%;
+	}
+	#map-canvas{
+		height: 440px;
+	}
+	#trafficInfo{
+		padding: 2em 2em;
+	}
+	
+}
+
+@media screen and (max-width: 960px){
+	.grid-5{
+		width: 100%;
+	}
+	.grid-3{
+		width: 100%;
+	}
+	#map-canvas{
+		height: 280px;
+	}
+	#trafficInfo{
+		padding: 2em 4em;
+	}
+	
+	.header h1{
+		font-size: 4em;
+	}
+}
+/*
+@media screen and (max-width: 641px){
+
+}
+*/
