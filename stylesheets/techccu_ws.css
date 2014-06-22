@@ -170,6 +170,9 @@ font-size: 1.8em;
 font-weight: 100;
 }
 
+#info p{
+text-align: center;
+}
 
 #map-canvas{
 width: 100%;
