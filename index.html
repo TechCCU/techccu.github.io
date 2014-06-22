@@ -20,6 +20,7 @@
 
 <body>
 <nav id="navbar">
+<span id="navbar-mBtn"><img src="images/navicon.svg"/></span>
 <ul>
 	<li>
 		<a href="#about">簡介</a>
@@ -277,6 +278,9 @@ $(document).ready(function(){
 		$('html, body').stop().animate(
 			{scrollTop: scrollTo}, 300);
 		
+		if($("#navbar-mBtn").is(":visible"))
+			$( "#navbar ul" ).hide();
+			
 		e.preventDefault();
 	});
 	
@@ -302,6 +306,10 @@ $(document).ready(function(){
 		
 	});
 	
+	$("#navbar-mBtn").click(function() {
+	  $( "#navbar ul" ).toggle();
+	});
+	
 	
 
 
@@ -315,9 +323,9 @@ function initialize() {
 
 	var mapOptions = {
 		zoom: 14,
-		center: new google.maps.LatLng(23.557652, 120.462543),
+		center: new google.maps.LatLng(23.558145, 120.465530),
 		panControl: false,
-		zoomControl: true,
+		zoomControl: false,
 		mapTypeControl: false,
 		scaleControl: false,
 		streetViewControl: false,

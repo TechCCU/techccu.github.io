@@ -60,7 +60,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
-height: 70vh;
+height: 70%;
 z-index: -999;
 }
 
@@ -96,8 +96,21 @@ background-color: #992108;
 text-decoration: none;
 }
 
+#navbar-mBtn{
+background-color: #E45218;
+display:none;
+cursor: pointer;
+width: 44px;
+height: 44px;
+}
+
+#navbar-mBtn img{
+width: 32px;
+padding: 6px 4px 6px 8px;
+}
+
 .header{
-margin-top: 30vh;
+margin-top: 12em;
 text-align: center;
 }
 
@@ -119,13 +132,14 @@ padding: 4px 10px;
 
 .contentWrap{
 position: absolute;
-top: 70vh;
+top: 70%;
 left: 0;
 right: 0;
 background-color: #fff;
 -webkit-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
 -moz-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
 box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
+overflow: hidden;
 }
 
 #socialPanel{
@@ -278,6 +292,11 @@ text-decoration: underline;
 	#trafficInfo{
 		padding: 2em 2em;
 	}
+	
+	#navbar ul{
+		display: block;
+	}
+	
 }
 
 @media screen and (max-width: 1270px) {
@@ -293,6 +312,10 @@ text-decoration: underline;
 	}
 	#trafficInfo{
 		padding: 2em 2em;
+	}
+
+	#navbar ul{
+		display: block;
 	}
 	
 }
@@ -314,9 +337,112 @@ text-decoration: underline;
 	.header h1{
 		font-size: 4em;
 	}
+	
+	#navbar ul{
+		display: block;
+	}
 }
-/*
+
 @media screen and (max-width: 641px){
 
+	body, html{
+		font-size: 90%;
+	}
+
+	div[class*='grid-']{
+		width: 100%;
+	}
+	
+	.section{
+		width: 90%;
+	}
+	
+	.sectionExpand{
+		width: 100%;
+	}
+	
+	#map-canvas{
+		height: 240px;
+	}
+	
+	#trafficInfo{
+	padding: 1em;
+	}
+	
+	.cover-bg{
+	background-position: 70% 40%;
+	}
+	
+	.header{
+		margin-top: 45%;
+	}
+	.header h1{
+		font-size: 3em;
+	}
+
+	#navbar{
+		top: 1em;
+		right: 1em;
+		text-align: right;
+	}
+
+	#navbar-mBtn{
+		display: inline-block;
+	}
+	
+	#navbar ul{
+		margin-top: -4px;
+		text-align: left;
+		transition: all 0.3s;
+		display: none;
+	}
+	
+	#navbar li{
+		display: block;
+	}
+	
+	#navbar a{
+		font-size: 1.5em;
+		padding: 15px 30px;
+		display: block;
+	}
+	
+	#scheduleTable thead{
+		display:none;
+	}
+	
+	#scheduleTable td{
+		display: block;
+		border: 0;
+	}
+	
+	#scheduleTable tr.spanrow td:last-child{
+		background-color: initial;
+	}
+	
+	#scheduleTable .stableTime{
+		background-color: #eee;
+	}
+	
+	#scheduleTable tr:not(.spanrow) td:nth-child(2){
+		width: 35%;
+		display:inline-block;
+		box-sizing: border-box;
+	}
+	#scheduleTable tr:not(.spanrow) td:nth-child(3){
+		width: 65%;
+		display:inline-block;
+		box-sizing: border-box;
+		border-left: 1px solid #eee;
+	}
+	
+	.spkrPic{
+		width: 40%;
+		margin: 0 30%;
+	}
+	.spkrName{
+		text-align:center;
+		margin: 1em 0;
+	}
+	
 }
-*/
