@@ -443,6 +443,7 @@ text-decoration: underline;
 	.spkrName{
 		text-align:center;
 		margin: 1em 0;
+		font-size: 1.5em;
 	}
 	
 }
