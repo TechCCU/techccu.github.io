@@ -255,3 +255,8 @@ font-size: 0.9em;
 color: #aaa;
 padding: 4em 0 2em 0;
 }
+
+footer a{
+color: #aaa;
+text-decoration: underline;
+}
