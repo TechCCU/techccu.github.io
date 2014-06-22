@@ -14,7 +14,12 @@
 
 <body>
 <nav>
-navigation will be here!
+<ul>
+	<li><a href="#about">簡介</a></li>
+	<li><a href="#info">活動資訊</a></li>
+	<li><a href="#schedule">議程</a></li>
+	<li><a href="#speaker">講者</a></li>
+</ul>
 </nav>
 <div class="cover-bg"></div>
 <div class="header">
@@ -28,7 +33,7 @@ navigation will be here!
 	<div class="secHeader">
 		<h2 class="secTitle">簡介</h2>
 	</div>
-	<p>TechCCU 是由中正大學資工系學生@brucehsu 與@Terces 所發起，我們秉持技術討論與經驗分享的精神連結校內外各式的人才與我們一起交流。
+	<p>TechCCU 是由中正大學資工系學生<a href="#">@brucehsu</a>與<a href="#">@Terces</a>所發起，我們秉持技術討論與經驗分享的精神連結校內外各式的人才與我們一起交流。
 	過去一年來我們採用各種方式，如線上分享、實體聚會（Meet up）的方式進行我們的活動，隨著我們人數的增加，我們聚集到更多願意一起分享
 	的人來參與，眼見時機成熟，我們決定主辦一場為期一天的 Workshop 來讓大家共襄盛舉。 
 	</p>
@@ -45,11 +50,20 @@ navigation will be here!
 	
 </section>
 
-<section id="info-location" class="section sectionExpand clearfix">
-	<div id="map-canvas" class="secGrid-5">
-	</div>
-	<div class="secGrid-3">
-	交通資訊will be here
+<section id="info-location" class="section sectionExpand">
+	<div class="gridWrap">
+		<div class="grid-5">
+			<div id="map-canvas"></div>
+		</div><div class="grid-3">
+			<div id="trafficInfo">
+			<h3 class="traffic-title">開車</h3>
+			<p class="traffic-desc"><b>經國道一號</b><br/>由民雄交流道下，往民雄方向沿著民雄外環道(民新路)前行約1.9公里，過民雄陸橋後左轉進入省道台一線，前行約600公尺，右轉入大學路三段後，沿著大學路往前行駛約4.2公里即可抵達本校。<br/><b>經國道三號</b><br/>[南下方向] 梅山交流道下→縣道162 (經過大林鎮公所)→左轉往民生路→往前行駛左轉大民北路→左轉到縣道106(大學路一段)→再行駛五分鐘即抵達中正大學<br/>[北上方向] 竹崎交流道下→縣道166→民雄方向→再依照沿路之指示牌，即可抵達中正大學</p>
+			<h3 class="traffic-title">火車</h3>
+			<p class="traffic-desc">搭乘火車至民雄站，出站後步行至民雄長壽會館轉乘嘉義縣公車。</p>
+			<h3 class="traffic-title">高鐵</h3>
+			<p class="traffic-desc">由嘉義高鐵站搭乘計程車至本校，路程約30-40分鐘。</p>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -68,9 +82,9 @@ navigation will be here!
 		</tr>
 		</thead>
 		<tbody>
-			<tr>
+			<tr class="spanrow">
 				<td class="stableTime">09:15 ~ 09:45</td>
-				<td colspan="2" class="spanCol">報到時間</td>
+				<td colspan="2">報到時間</td>
 			</tr>
 			<tr>
 				<td class="stableTime">09:45 ~ 10:00</td>
@@ -80,7 +94,7 @@ navigation will be here!
 			<tr>
 				<td class="stableTime">10:00 ~ 10:50</td>
 				<td>Richard Lee</td>
-				<td>Keynote[確認中]</td>
+				<td>Keynote 我從資訊科系學生變成創業者學到的事</td>
 			</tr>
 			<tr>
 				<td class="stableTime">11:00 ~ 11:30</td>
@@ -92,9 +106,9 @@ navigation will be here!
 				<td>Frand</td>
 				<td>TBD</td>
 			</tr>
-			<tr>
+			<tr class="spanrow">
 				<td class="stableTime">12:20 ~ 13:30</td>
-				<td colspan="2" class="spanCol">午餐休息時間</td>
+				<td colspan="2">午餐休息時間</td>
 			</tr>
 			<tr>
 				<td class="stableTime">13:30 ~ 14:00</td>
@@ -106,9 +120,9 @@ navigation will be here!
 				<td>Vexed</td>
 				<td>Keynote: 前端工程師與水電工的相似之處</td>
 			</tr>
-			<tr>
+			<tr class="spanrow">
 				<td class="stableTime">15:00 ~ 15:30</td>
-				<td colspan="2" class="spanCol">Tea Time!</td>
+				<td colspan="2">Tea Time!</td>
 			</tr>
 			<tr>
 				<td class="stableTime">15:30 ~ 16:00</td>
@@ -129,6 +143,72 @@ navigation will be here!
 	
 </section>
 
+<section id="speaker" class="section">
+
+	<div class="secHeader">
+		<h2 class="secTitle">講者</h2>
+	</div>
+	
+	<div class="speakerCard gridWrap">
+		<div class="grid-2">
+			<img class="spkrPic" src='intro/richard_lee_sq.jpg'/>
+		</div><div class="grid-6">
+			<h3 class="spkrName">Richard Lee</h3>
+			<p class="spkrDesc">Polydice & Inside 共同創辦人，目前主要參與公司產品愛料理的營運以及產品開發。 熱愛打造產品、新創公司的成長以及 Web 和 Mobile 相關技術。</p>
+			<div class="spkrTopic">
+				<h4>我從資訊科系學生變成創業者學到的事</h4>
+				<p>在這次的分享當中，我將以自身的經驗分享創業的經驗，以及作為資訊科系學生該如何在新創公司當中發揮價值，以及在學期間該如何提前規劃並學習相關知識。</p>
+			</h4>
+			</div>
+		</div>
+	</div>
+	
+	<div class="speakerCard gridWrap">
+		<div class="grid-2">
+			<img class="spkrPic" src='intro/Vexed_sq.jpg'/>
+		</div><div class="grid-6">
+			<h3 class="spkrName">Vexed</h3>
+			<p class="spkrDesc">I am Vexed</p>
+			<div class="spkrTopic">
+				<h4>前端工程師與水電工的相似之處</h4>
+				<p>前端工程師到底在幹嘛</p>
+			</h4>
+			</div>
+		</div>
+	</div>	
+
+	<div class="speakerCard gridWrap">
+		<div class="grid-2">
+			<img class="spkrPic" src='intro/luba_sq.jpg'/>
+		</div><div class="grid-6">
+			<h3 class="spkrName">Luba Tang</h3>
+			<p class="spkrDesc">長期關注 Open Source，專長是軟硬體界面整合，一不小心就跳坑到最深的編譯器與 EDA 領域。曾經開發商用 iterative compiler 與 open source MCLinker 專案，被 Android 與 BSD 所採用。現在專注在軟硬體效能提升上，為 Skymizer 創辦人。</p>
+			<div class="spkrTopic">
+				<h4>Skymizer 雲端編譯 / Skymizer: Build Software Better and Faster On The Cloud</h4>
+				<p>源碼的效能，如工程師的熱血，沒有極限，等待你來引爆。編譯器有許多的限制，壓抑了源碼的效能。從源碼結構、到執行時期、到硬體架構都有限制。本次主題會從 GCC 編譯器的限制出發，介紹 Skymizer 中新穎與重要的最佳化技術，如雲端編譯與 SkyPat 分析工具，如何突破這些限制來加速源碼。希望藉由這次的機會，分享過去開發編譯器的經驗，和與會的朋友們一起成長。</p>
+			</h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="speakerCard gridWrap">
+		<div class="grid-2">
+			<img class="spkrPic" src='intro/terces_sq.jpg'/>
+		</div><div class="grid-6">
+			<h3 class="spkrName">terces</h3>
+			<p class="spkrDesc">作者為全端工程師，長期關注硬體開發</p>
+			<div class="spkrTopic">
+				<h4>戰爭遊戲101</h4>
+				<p>本Session為台灣資安發展協會贊助，希望透過有系統的教學方式，讓學員們可以了解War Game的精神以及闖關技巧，並學習以及實際操作駭客的攻擊手法，寓教於樂。</p>
+			</h4>
+			</div>
+		</div>
+	</div>	
+</section>
+
+<footer>
+主辦單位: TechCCU, DM+ Lab @Dept. CSIE<br/>協辦單位:中正大學校園網路策進會, 台灣資安發展協會<br/>©2014 TechCCU, All Rights Reserved.
+</footer>
 </div>
 <script>
 var map;

@@ -8,8 +8,52 @@ line-height: 1.5em;
 font-size: 1.2em;
 }
 
+a{
+color:#185D93;
+text-decoration: none;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+.gridWrap{
+width: 100%;
+overflow: hidden;
+}
+
+div[class*='grid-']{
+display: inline-block;
+vertical-align: top;
+box-sizing: border-box;
+}
+
+.grid-8{
+width: 100%;
+}
+
+.grid-6{
+width: 75%;
+}
+
+.grid-5{
+width: 62.5%
+}
+
+.grid-4{
+width: 50%;
+}
+
+.grid-3{
+width: 37.5%;
+}
+
+.grid-2{
+width: 25%;
+}
+
 .cover-bg{
-background-image: url('../images/coverbg.jpg');
+background: url('../images/coverbg.jpg') no-repeat;
 background-size: cover;
 background-position: 50% 40%;
 position: fixed;
@@ -23,8 +67,33 @@ z-index: -999;
 nav{
 position: fixed;
 top: 2em;
-right: 4em;
+right: 2em;
 z-index: 100;
+}
+
+nav ul{
+list-style: none;
+margin: 0;
+padding: 0;
+background-color: #E45218;
+}
+
+nav ul li{
+display: inline-block;
+}
+
+nav a{
+text-decoration: none;
+color: #fff;
+padding: 8px 10px;
+display: inline-block;
+-webkit-transition: background-color 0.2s;
+transition: background-color 0.3s;
+}
+
+nav a:hover{
+background-color: #992108;
+text-decoration: none;
 }
 
 .header{
@@ -54,6 +123,9 @@ top: 70vh;
 left: 0;
 right: 0;
 background-color: #fff;
+-webkit-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
+box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
 }
 
 .section{
@@ -98,20 +170,27 @@ font-size: 1.8em;
 font-weight: 100;
 }
 
-div[class*='secGrid-']{
-display: inline-block;
-float:left;
-}
-
-.secGrid-5{
-width: 62.5%
-}
-.secGrid-3{
-width: 37.5%;
-}
 
 #map-canvas{
-height: 400px;
+width: 100%;
+height: 420px;
+}
+
+#trafficInfo{
+padding: 2em 4em;
+}
+
+#trafficInfo h3{
+color: #E45218;
+margin: 0;
+font-weight: normal;
+}
+
+#trafficInfo p{
+font-size: 0.9em;
+font-weight: normal;
+margin: 0 0 1em 0;
+color: #ddd;
 }
 
 #scheduleTable{
@@ -122,8 +201,54 @@ border: 1px solid #aaa;
 #scheduleTable th,td{
 padding: 14px 10px;
 border: 1px solid #aaa;
+text-align: center;
 }
 
-.spanCol{
+#scheduleTable td.stableTime{
+}
+
+#scheduleTable tr.spanrow td:last-child{
 background-color: #eee;
+}
+
+#scheduleTable tr:not(.spanrow) td:last-child{
+text-align: left;
+}
+
+.speakerCard{
+margin-bottom: 5em;
+}
+.speakerCard h3, h4{
+margin: 0.5em 0;
+}
+
+.speakerCard p{
+font-size: 1em;
+margin: 0;
+}
+
+.spkrPic{
+width: 50%;
+padding: 0 20%;
+border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+}
+
+.spkrName{
+color: #185D93;
+margin: 0.25em 0;
+}
+
+.spkrTopic{
+border-left: 4px solid #aaa;
+padding-left: 8px;
+margin-top: 1.5em;
+}
+
+footer{
+text-align: center;
+font-size: 0.9em;
+color: #aaa;
+padding: 4em 0 2em 0;
 }
