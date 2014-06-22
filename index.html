@@ -7,18 +7,23 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <link href="stylesheets/normalize.css" rel="stylesheet"/>
 <link href="stylesheets/techccu_ws.css" rel="stylesheet"/>
-<script src=""></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <title>TechCCU Workshop 2014</title>
 </head>
 
 <body>
-<nav>
+<nav id="navbar">
 <ul>
-	<li><a href="#about">簡介</a></li>
-	<li><a href="#info">活動資訊</a></li>
-	<li><a href="#schedule">議程</a></li>
-	<li><a href="#speaker">講者</a></li>
+	<li>
+		<a href="#about">簡介</a>
+	</li><li>
+		<a href="#info">活動資訊</a>
+	</li><li>
+		<a href="#schedule">議程</a>
+	</li><li>
+		<a href="#speaker">講者</a>
+	</li>
 </ul>
 </nav>
 <div class="cover-bg"></div>
@@ -211,6 +216,62 @@
 </footer>
 </div>
 <script>
+
+$(document).ready(function(){
+
+	topGapping = 48;
+	navbox = $('#navbar');
+	
+	navItems = navbox.find("a");
+	
+	sectionList = navItems.map(function(){
+		var sec = $($(this).attr("href"));
+		
+		if(sec.length){
+			return sec;
+		}
+	});
+	
+	navItems.click(function(e){
+		var target = $(this).attr("href");
+		scrollTo = (target==="#")? 0 : $(target).offset().top-topGapping+1;
+		
+		$('html, body').stop().animate(
+			{scrollTop: scrollTo}, 300);
+		
+		e.preventDefault();
+	});
+	
+	var preSecId;
+	
+	$(window).scroll(function(){
+		var window_pos = $(window).scrollTop()+topGapping;
+	
+		var curSec = sectionList.map(function(){
+			if($(this).offset().top<window_pos){
+				return this;
+			}
+		});
+		
+		curSec = curSec[curSec.length-1];
+		var curSecId = curSec && curSec.length? curSec[0].id : "";
+
+		if(curSecId!=0 && preSecId!== curSecId){
+			preSecId = curSecId;
+			
+			navItems.removeClass('active').filter("[href=#"+curSecId+"]").addClass('active');
+		}
+		
+	});
+	
+	
+
+
+});
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
 var map;
 function initialize() {
 
@@ -264,8 +325,6 @@ function initialize() {
 		  map: map,
 	  });	
 }
-
-google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
 </body>
