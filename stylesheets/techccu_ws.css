@@ -135,7 +135,7 @@ position: absolute;
 top: 70%;
 left: 0;
 right: 0;
-background-color: #fff;
+background-color: #f1f1f1;
 -webkit-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
 -moz-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
 box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
@@ -246,6 +246,7 @@ color: #ddd;
 #scheduleTable{
 width: 100%;
 border: 1px solid #aaa;
+background-color: #fff;
 }
 
 #scheduleTable th,td{
@@ -258,7 +259,7 @@ text-align: center;
 }
 
 #scheduleTable tr.spanrow td:last-child{
-background-color: #eee;
+background-color: #ddd;
 }
 
 #scheduleTable tr:not(.spanrow) td:last-child{
@@ -469,7 +470,7 @@ text-decoration: underline;
 	}
 	
 	#scheduleTable .stableTime{
-		background-color: #eee;
+		background-color: #ddd;
 	}
 	
 	#scheduleTable tr:not(.spanrow) td:nth-child(2){
