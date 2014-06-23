@@ -119,15 +119,15 @@ font-size: 5em;
 color: #FFF;
 font-weight: 700;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-margin: 0.4em 0;
+margin: 0.4em 0 0 0;
 }
 
 .header span{
-font-size: 2em;
+font-size: 4em;
 font-weight: 700;
 color: #fff;
-border: 3px solid;
 padding: 4px 10px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contentWrap{
@@ -320,12 +320,12 @@ background-color: #E45218;
 footer{
 text-align: center;
 font-size: 0.9em;
-color: #aaa;
+color: #777;
 padding: 4em 0 2em 0;
 }
 
 footer a{
-color: #aaa;
+color: #777;
 text-decoration: underline;
 }
 
@@ -402,6 +402,16 @@ text-decoration: underline;
 		width: 100%;
 	}
 	
+	#socialPanel{
+		margin: 0 0 -2em 0;
+	}
+	#socialPanel div {
+		margin: 12px 8px !important;
+		display: block !important;
+		width: 50%;
+		text-align: left;
+	}
+	
 	.section{
 		width: 90%;
 	}
@@ -429,6 +439,10 @@ text-decoration: underline;
 		font-size: 3em;
 	}
 
+	.header span{
+		font-size: 3em;
+	}
+	
 	#navbar{
 		top: 1em;
 		right: 1em;
