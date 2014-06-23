@@ -189,8 +189,24 @@ font-size: 1.8em;
 font-weight: 100;
 }
 
-#info p{
+#info{
 text-align: center;
+}
+
+#info span{
+color: #185D93;
+font-size: 1.2em;
+display: block;
+text-align: center;
+margin: 0.5em 0;
+}
+
+#info p{
+display: inline-block;
+border-top: 1px solid rgba(24, 93, 147, 0.3);
+margin: 0 0 1em 0;
+padding: 8px 8px;
+font-size: 1.5em;
 }
 
 #map-canvas{
@@ -266,6 +282,26 @@ margin: 0.25em 0;
 border-left: 4px solid #aaa;
 padding-left: 8px;
 margin-top: 1.5em;
+}
+
+
+#apply{
+text-align: center;
+}
+
+#apply a{
+color: #fff;
+background-color: #EF7748;
+padding: 0.25em 1em;
+font-size: 2em;
+margin: 1em 0;
+display: inline-block;
+box-shadow: 2px 2px 5px #B33B0B;
+}
+
+#apply a:hover{
+text-decoration: none;
+background-color: #E45218;
 }
 
 footer{
