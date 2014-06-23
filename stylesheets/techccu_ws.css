@@ -145,6 +145,12 @@ overflow: hidden;
 #socialPanel{
 text-align:right;
 margin: 1em;
+font-size: 1px;
+}
+
+#socialPanel div{
+vertical-align: middle !important;
+margin: 0 6px !important;
 }
 
 .section{
