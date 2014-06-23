@@ -151,6 +151,11 @@ font-size: 1px;
 #socialPanel div{
 vertical-align: middle !important;
 margin: 0 6px !important;
+display: inline-block;
+}
+
+#socialPanel div iframe{
+vertical-align: middle;
 }
 
 .section{
