@@ -170,7 +170,7 @@ max-width: 960px;
 
 .sectionExpand{
 width: 100%;
-max-width: initial;
+max-width: 0;
 background-color: #252525;
 color: #fff;
 }
