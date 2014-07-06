@@ -3,4 +3,4 @@ yungshin
 上班爬網站，下班寫網站的程式小雜工，其實骨子裡是前端工程師，目前任職於資策會創研所
 [session]
 title:  Introduction to Sails.js
-abstract: 
+abstract:  Sails.js是一個Node.js MVC Framework，如同知名的Rails, Django等framework，Sails.js也支援現在Web開發中常見的feature，本次talk中將會介紹如何使用Sails.js及Sails.js的基礎架構
