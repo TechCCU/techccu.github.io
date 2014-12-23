@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="TechCCU Workshop 2014" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="stylesheets/normalize.css" rel="stylesheet"/>
+<link href="stylesheets/techccu_ws.css" rel="stylesheet"/>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<title>TechCCU Workshop 2014</title>
+
+<meta property="og:title" content="TechCCU Workshop 2014">
+<meta property="og:type" content="website">
+<meta property="og:description" content="TechCCU 是由中正大學資工系學生@brucehsu和@Terces所發起，我們秉持技術討論與經驗分享的精神連結校內外各式的人才與我們一起交流。過去一年來我們採用各種方式，如線上分享、實體聚會（Meet up）的方式進行我們的活動，隨著我們人數的增加，我們聚集到更多願意一起分享的人來參與，眼見時機成熟，我們決定主辦一場為期一天的 Workshop 來讓大家共襄盛舉。">
+<meta property="og:url" content="http://techccu.github.io/2014/">
+<meta property="og:image" content="http://techccu.github.io/2014/images/sharecover.jpg">
+
+<meta itemprop="name" content="TechCCU Workshop 2014">
+<meta itemprop="description" content="TechCCU 是由中正大學資工系學生@brucehsu與@Terces所發起，我們秉持技術討論與經驗分享的精神連結校內外各式的人才與我們一起交流。 過去一年來我們採用各種方式，如線上分享、實體聚會（Meet up）的方式進行我們的活動，隨著我們人數的增加，我們聚集到更多願意一起分享 的人來參與，眼見時機成熟，我們決定主辦一場為期一天的 Workshop 來讓大家共襄盛舉。">
+<meta itemprop="image" content="http://techccu.github.io/2014/images/sharecover.jpg">
+</head>
+
+<body>
+<nav id="navbar">
+<span id="navbar-mBtn"><img src="images/navicon.svg"/></span>
+<ul>
+	<li>
+		<a href="http://techccu.kktix.cc/events/techccuworkshop2014" target="_blank">活動報名</a>
+	</li><li>
+		<a href="#about">簡介</a>
+	</li><li>
+		<a href="#info">活動資訊</a>
+	</li><li>
+		<a href="#schedule">議程</a>
+	</li><li>
+		<a href="#speaker">講者</a>
+	</li><li>
+		<a href="#worker">工作人員</a>
+	</li>
+</ul>
+</nav>
+<div class="cover-bg"></div>
+<div class="header">
+	<h1>TechCCU Workshop</h1>
+	<span>2014</span>
+</div>
+
+<div class="contentWrap">
+<!-- for social network -->
+<div id="socialPanel">
+
+<div id="fb-root"></div>
+<script>
+	(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.0";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-like" data-href="http://techccu.github.io/2014/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+<div class="twitter-share">
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://techccu.github.io/2014/">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
+<div class="g-plusone"></div>
+<!-- 在最後一個「+1 按鈕」標記之後放置這個標記。 -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'zh-TW'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</div>
+
+
+
+<section id="about" class="section">
+
+	<div class="secHeader">
+		<h2 class="secTitle">簡介</h2>
+	</div>
+	<p>TechCCU 是由中正大學資工系學生@brucehsu與@Terces所發起，我們秉持技術討論與經驗分享的精神連結校內外各式的人才與我們一起交流。
+	過去一年來我們採用各種方式，如線上分享、實體聚會（Meet up）的方式進行我們的活動，隨著我們人數的增加，我們聚集到更多願意一起分享
+	的人來參與，眼見時機成熟，我們決定主辦一場為期一天的 Workshop 來讓大家共襄盛舉。 
+	</p>
+</section>
+
+<section id="info" class="section">
+
+	<div class="secHeader">
+		<h2 class="secTitle">活動資訊</h2>
+	</div>
+	<span>時間</span>
+	<p>2014年7月12日 星期六</p>
+	<span>地點</span>
+	<p>國立中正大學工學院 EA101教室</p>
+	<span>IRC 聊天室</span>
+	<p>chat.freenode.net #TechCCU</p>
+
+	<div id="apply">
+		<a href="http://techccu.kktix.cc/events/techccuworkshop2014" target="_blank">立即報名</a>
+	</div>
+</section>
+
+<section id="info-location" class="section sectionExpand">
+	<div class="gridWrap">
+		<div class="grid-5-8">
+			<div id="map-canvas"></div>
+		</div><div class="grid-3-8">
+			<div id="trafficInfo">
+			<h3 class="traffic-title">開車</h3>
+			<p class="traffic-desc"><b>經國道一號</b><br/>由民雄交流道下，往民雄方向沿著民雄外環道(民新路)前行約1.9公里，過民雄陸橋後左轉進入省道台一線，前行約600公尺，右轉入大學路三段後，沿著大學路往前行駛約4.2公里即可抵達本校。<br/><b>經國道三號</b><br/>[南下方向] 梅山交流道下→縣道162 (經過大林鎮公所)→左轉往民生路→往前行駛左轉大民北路→左轉到縣道106(大學路一段)→再行駛五分鐘即抵達中正大學<br/>[北上方向] 竹崎交流道下→縣道166→民雄方向→再依照沿路之指示牌，即可抵達中正大學</p>
+			<h3 class="traffic-title">火車</h3>
+			<p class="traffic-desc">搭乘火車至民雄站，出站後步行至民雄長壽會館轉乘嘉義縣公車。</p>
+			<h3 class="traffic-title">高鐵</h3>
+			<p class="traffic-desc">由嘉義高鐵站搭乘計程車至本校，路程約30-40分鐘。</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="schedule" class="section">
+
+	<div class="secHeader">
+		<h2 class="secTitle"><a href="https://www.youtube.com/playlist?list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8" target="_blank">議程</a></h2>
+	</div>
+	
+	<table id="scheduleTable">
+		<thead>
+		<tr>
+			<th>時間</th>
+			<th>講者</th>
+			<th>主題</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr class="spanrow">
+				<td class="stableTime">09:15 ~ 09:45</td>
+				<td colspan="2">報到時間</td>
+			</tr>
+			<tr>
+				<td class="stableTime">09:45 ~ 10:00</td>
+				<td></td>
+				<td>
+					<a href="https://www.youtube.com/watch?v=ds6wMD5qLN4&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=1" target="_blank">Opening</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="stableTime">10:00 ~ 10:50</td>
+				<td>
+					<a href="slides/Session1-Scalability.pdf" target="_blank">Richard Lee</a>
+				</td>
+				<td>
+					<a href="https://www.youtube.com/watch?v=4denm1dtE-c&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=2" target="_blank">Keynote: 我從資訊科系學生變成創業者學到的事</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="stableTime">11:00 ~ 11:30</td>
+				<td>
+					<a href="slides/Session2-Introduction_to_Sails_js.pdf" target="_blank">Yungshin</a>
+				</td>
+				<td>
+					<a href="https://www.youtube.com/watch?v=JlS4KtKLapM&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=3" target="_blank">Introduction to Sails.js</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="stableTime">11:40 ~ 12:20</td>
+				<td>
+					<a href="slides/Session3-5yrs_flowstatd.pdf" target="_blank">Kudo</a>
+				</td>
+				<td>
+					<a href="https://www.youtube.com/watch?v=WwA6h7h4O1Q&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=4" target="_blank">flowstatd 之從學生到出社會的五年成長故事</a>
+				</td>
+			</tr>
+			<tr class="spanrow">
+				<td class="stableTime">12:20 ~ 13:30</td>
+				<td colspan="2">午餐休息時間</td>
+			</tr>
+			<tr>
+				<td class="stableTime">13:30 ~ 14:00</td>
+				<td>
+					<a href="slides/Session4-OpenFlow_Introduction.pdf" target="_blank">icemango</a>
+				</td>
+				<td>
+					<a href="https://www.youtube.com/watch?v=-YDqgugDNgk&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=5" target="_blank">OpenFlow introduction</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="stableTime">14:10 ~ 15:00</td>
+				<td>
+					<a href="slides/Session5/slide.html" target="_blank">Vexed</a>
+				</td>
+				<td>
+					<a href="https://www.youtube.com/watch?v=omb0hTK9R6A&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=6" target="_blank">Keynote: 網頁前端工程師與室內裝修師傅的相似之處</a>
+				</td>
+			</tr>
+			<tr class="spanrow">
+				<td class="stableTime">15:00 ~ 15:30</td>
+				<td colspan="2">Tea Time!</td>
+			</tr>
+			<tr>
+				<td class="stableTime">15:30 ~ 16:00</td>
+				<td>Luba</td>
+				<td>
+					<a href="https://www.youtube.com/watch?v=JbwmeMkY_bc&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=7" target="_blank">Skymizer 雲端編譯</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="stableTime">16:10 ~ 17:00</td>
+				<td>
+					<a href="slides/Session7-WarGame_911.pdf" target="_blank">Terces</a>
+				</td>
+				<td>
+					<a href="https://www.youtube.com/watch?v=3Gygo5m0XBo&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=8" target="_blank">Keynote: 戰爭遊戲 101</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="stableTime">17:00 ~ 17:30</td>
+				<td></td>
+				<td>
+					<a href="https://www.youtube.com/watch?v=u1hmJGiPUXc&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=10" target="_blank">閃電秀I</a><br />
+					<a href="https://www.youtube.com/watch?v=ApMEs69lCG4&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=11" target="_blank">閃電秀II</a><br />
+					<a href="https://www.youtube.com/watch?v=j16IMbCknVY&list=PLP832CP4oX6hvy0ycFyyvX_wFiQ-XXmM8&index=12" target="_blank">閃電秀III</a><br />
+					閉幕
+				</td>
+			</tr>
+    </table>
+	
+</section>
+
+<section id="speaker" class="section">
+
+	<div class="secHeader">
+		<h2 class="secTitle">講者</h2>
+	</div>
+	
+	<div class="speakerCard gridWrap">
+		<div class="grid-1-4">
+			<img class="spkrPic" src='intro/richard_lee_sq.jpg'/>
+		</div><div class="grid-3-4">
+			<h3 class="spkrName">Richard Lee</h3>
+			<p class="spkrDesc">Polydice & Inside 共同創辦人，目前主要參與公司產品愛料理的營運以及產品開發。 熱愛打造產品、新創公司的成長以及 Web 和 Mobile 相關技術。</p>
+			<div class="spkrTopic">
+				<h4>我從資訊科系學生變成創業者學到的事</h4>
+				<p>在這次的分享當中，我將以自身的經驗分享創業的經驗，以及作為資訊科系學生該如何在新創公司當中發揮價值，以及在學期間該如何提前規劃並學習相關知識。</p>
+			</h4>
+			</div>
+		</div>
+	</div>
+	
+	<div class="speakerCard gridWrap">
+		<div class="grid-1-4">
+			<img class="spkrPic" src='intro/yungshin_sq.jpg'/>
+		</div><div class="grid-3-4">
+			<h3 class="spkrName">Yungshin</h3>
+			<p class="spkrDesc">上班爬網站，下班寫網站的程式小雜工，其實骨子裡是前端工程師，目前任職於資策會創研所</p>
+			<div class="spkrTopic">
+				<h4>Introduction to Sails.js</h4>
+				<p>Sails.js是一個Node.js MVC Framework，如同知名的Rails, Django等framework，Sails.js也支援現在Web開發中常見的feature，本次talk中將會介紹如何使用Sails.js及Sails.js的基礎架構</p>
+			</h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="speakerCard gridWrap">
+		<div class="grid-1-4">
+			<img class="spkrPic" src='intro/kudo_sq.jpg'/>
+		</div><div class="grid-3-4">
+			<h3 class="spkrName">Kudo</h3>
+			<p class="spkrDesc">中正資工系所土生土長的畢業生，曾任 CNA 會長，畢業後先後於趨勢科技與新創公司上班，目前任職新創公司 biideal 打雜技術長。目前努力學習成為一個 cloud/client 全端攻城獅。 </p>
+			<div class="spkrTopic">
+				<h4>flowstatd 之從學生到出社會的五年成長故事</h4>
+				<p>學生時代總是很嘴砲地想要做很多大大小小的 project，最後很多都真的嘴砲化了，flowstatd 是唯一一個能出來見見世面的成果，也實際用於統計中正宿網流量。歷時五年（脫稿）打造，其中伴隨著個人從學生時代成長到出社會歷練後的不斷改造，本次將分享 flowstatd 的打造歷程，還有其中許多值得做為教材的不為人知面哦。</p>
+			</h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="speakerCard gridWrap">
+		<div class="grid-1-4">
+			<img class="spkrPic" src='intro/icemango_sq.jpg'/>
+		</div><div class="grid-3-4">
+			<h3 class="spkrName">icemango</h3>
+			<p class="spkrDesc">中正資工不知道哪年畢業的，最擅長把網頁上的字圈起來餵Google，目前在某家新創小公司跟同事們追求準時下班的小確幸。</p>
+			<div class="spkrTopic">
+				<h4>OpenFlow introduction</h4>
+				<p>以前擔任網管時總是希望能有更方便自動的網管系統，現在機會來了。在台灣剛開始發燒的軟體定義網路，踏入門的第 一把鑰匙，讓我們一起來推開 OpenFlow 的門扉 ...</p>
+			</h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="speakerCard gridWrap">
+		<div class="grid-1-4">
+			<img class="spkrPic" src='intro/Vexed_sq.jpg'/>
+		</div><div class="grid-3-4">
+			<h3 class="spkrName">Vexed</h3>
+			<p class="spkrDesc">中正資工系、所畢。網路帳號 Vexed ，中正資工綽號米蟲。曾任職於中華電信 Xuite 、 Hami+ 。目前為 Yahoo 資深工程師。</p>
+			<div class="spkrTopic">
+				<h4>網頁前端工程師與室內裝修師傅的相似之處 </h4>
+				<p>介紹我的網頁前端經歷與什麼是網頁前端工程師。</p>
+			</h4>
+			</div>
+		</div>
+	</div>	
+
+	<div class="speakerCard gridWrap">
+		<div class="grid-1-4">
+			<img class="spkrPic" src='intro/luba_sq.jpg'/>
+		</div><div class="grid-3-4">
+			<h3 class="spkrName">Luba Tang</h3>
+			<p class="spkrDesc">長期關注 Open Source，專長是軟硬體界面整合，一不小心就跳坑到最深的編譯器與 EDA 領域。曾經開發商用 iterative compiler 與 open source MCLinker 專案，被 Android 與 BSD 所採用。現在專注在軟硬體效能提升上，為 Skymizer 創辦人。</p>
+			<div class="spkrTopic">
+				<h4>Skymizer 雲端編譯 / Skymizer: Build Software Better and Faster On The Cloud</h4>
+				<p>源碼的效能，如工程師的熱血，沒有極限，等待你來引爆。編譯器有許多的限制，壓抑了源碼的效能。從源碼結構、到執行時期、到硬體架構都有限制。本次主題會從 GCC 編譯器的限制出發，介紹 Skymizer 中新穎與重要的最佳化技術，如雲端編譯與 SkyPat 分析工具，如何突破這些限制來加速源碼。希望藉由這次的機會，分享過去開發編譯器的經驗，和與會的朋友們一起成長。</p>
+			</h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="speakerCard gridWrap">
+		<div class="grid-1-4">
+			<img class="spkrPic" src='intro/terces_sq.jpg'/>
+		</div><div class="grid-3-4">
+			<h3 class="spkrName">Terces</h3>
+			<p class="spkrDesc">自中正資工系畢業，目前還在念中正資工所；平常為全端工程師(自稱)，長期關注硬體設計與開發，兼職於校內各個機房吹冷氣與掃地。</p>
+			<div class="spkrTopic">
+				<h4>戰爭遊戲101</h4>
+				<p>本Session為台灣資安發展協會贊助，希望透過有系統的教學方式，讓學員們可以了解War Game的精神以及闖關技巧，並學習以及實際操作駭客的攻擊手法，寓教於樂。</p>
+			</h4>
+			</div>
+		</div>
+	</div>	
+</section>
+
+<section id="worker" class="section">
+
+	<div class="secHeader">
+		<h2 class="secTitle">工作人員</h2>
+	</div>
+	<div class="gridWrap">
+	<!-- first line-->
+		<div class="workerCard grid-1-3">
+			<img src="worker/terces_sq.jpg"/>
+			<h3 class="workerName">Terces</h3>
+			<div class="workerDesc">總<del>找錢小弟</del>召</div>
+		
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/brucehsu_sq.jpg"/>
+			<h3 class="workerName">brucehsu</h3>
+			<div class="workerDesc">TechCCU Cofounder</div>
+		
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/worm_sq.jpg"/>
+			<h3 class="workerName">毒蟲</h3>
+			<div class="workerDesc">雜務工程師</div>
+
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/junko_sq.jpg"/>
+			<h3 class="workerName">junko</h3>
+			<div class="workerDesc">遠端打雜</div>
+		
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/adios_sq.jpg"/>
+			<h3 class="workerName">Adios</h3>
+			<div class="workerDesc">特級攝影師</div>
+		
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/mike_sq.jpg"/>
+			<h3 class="workerName">Mike</h3>
+			<div class="workerDesc">努力趕網站</div>
+
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/jean_sq.jpg"/>
+			<h3 class="workerName">jean</h3>
+			<div class="workerDesc">打掃阿桑</div>
+		
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/kai_sq.jpg"/>
+			<h3 class="workerName">林詠晴</h3>
+			<div class="workerDesc">挖系場務組</div>
+		
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/KoenigseggG_sq.jpg"/>
+			<h3 class="workerName">KoenigseggG</h3>
+			<div class="workerDesc">默默的場務</div>
+
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/kimberley_sq.jpg"/>
+			<h3 class="workerName">kimberley</h3>
+			<div class="workerDesc">我是stuff!</div>
+		
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/quest_sq.jpg"/>
+			<h3 class="workerName">quest</h3>
+			<div class="workerDesc">大師級場務工作人員</div>
+		
+		</div><div class="workerCard grid-1-3">
+			<img src="worker/ting_sq.jpg"/>
+			<h3 class="workerName">徐道婷</h3>
+			<div class="workerDesc">行政單位專員</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+主辦單位: TechCCU, <a href="http://dmplus.cs.ccu.edu.tw/">DM+ Lab @Dept. CSIE</a><br/>協辦單位:<a href="http://www.cna.ccu.edu.tw">中正大學校園網路策進會</a>, <a href="http://www.shield.org.tw">台灣資安發展協會</a><br/>
+©2014 TechCCU, All Rights Reserved.<br/>
+website by <a href="https://www.facebook.com/mikeliu32">mikeliu32</a>
+</footer>
+</div>
+<script>
+
+$(document).ready(function(){
+
+	topGapping = 72;
+	navbox = $('#navbar');
+	
+	navItems = navbox.find("a");
+	
+	sectionList = navItems.map(function(){
+	
+		var href = $(this).attr("href");
+		
+		if(href.charAt(0)==='#'){
+			var sec = $(href);
+		
+			if(sec.length){
+				return sec;
+			}
+		}
+	});
+	
+	navItems.click(function(e){
+		var target = $(this).attr("href");
+		scrollTo = (target.charAt(0)!=='#')? 0 : $(target).offset().top-topGapping+1;
+		
+		if(scrollTo>0){
+			$('html, body').stop().animate(
+				{scrollTop: scrollTo}, 300);
+		
+			if($("#navbar-mBtn").is(":visible"))
+				$( "#navbar ul" ).hide();
+
+			e.preventDefault();
+		}
+
+	});
+	
+	var preSecId;
+	
+	$(window).scroll(function(){
+		var window_pos = $(window).scrollTop()+topGapping;
+	
+		var curSec = sectionList.map(function(){
+			if($(this).offset().top<window_pos){
+				return this;
+			}
+		});
+		
+		curSec = curSec[curSec.length-1];
+		var curSecId = curSec && curSec.length? curSec[0].id : "";
+
+		if(curSecId!=0 && preSecId!== curSecId){
+			preSecId = curSecId;
+			
+			navItems.removeClass('active').filter("[href=#"+curSecId+"]").addClass('active');
+		}
+		
+	});
+	
+	$("#navbar-mBtn").click(function() {
+	  $( "#navbar ul" ).toggle();
+	});
+	
+	
+
+
+});
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+var map;
+function initialize() {
+
+	var mapOptions = {
+		zoom: 14,
+		center: new google.maps.LatLng(23.559200, 120.465990),
+		panControl: false,
+		zoomControl: false,
+		mapTypeControl: false,
+		scaleControl: false,
+		streetViewControl: false,
+		overviewMapControl: false,
+		styles: [
+					{
+						"featureType": "all",
+						"elementType": "all",
+						"stylers": [
+							{
+								"invert_lightness": true
+							},
+							{
+								"hue": "#ff1a00"
+							},
+							{
+								"saturation": -100
+							},
+							{
+								"lightness": 33
+							},
+							{
+								"gamma": 0.5
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#2D333C"
+							}
+						]
+					}
+				]						
+	};
+	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+
+	 var marker = new google.maps.Marker({
+		  position: new google.maps.LatLng(23.562159, 120.477802),
+		  map: map,
+	  });	
+}
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52181505-1', 'techccu.github.io');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

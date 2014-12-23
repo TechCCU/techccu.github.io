@@ -1,0 +1,6 @@
+[intro]
+Luba Tang，長期關注 Open Source，專長是軟硬體界面整合，一不小心就跳坑到最深的編譯器與 EDA 領域。曾經開發商用 iterative compiler 與 open source MCLinker 專案，被 Android 與 BSD 所採用。現在專注在軟硬體效能提升上，為 Skymizer 創辦人。
+[session]
+Title: Skymizer 雲端編譯 / Skymizer: Build Software Better and Faster On The Cloud
+Abstract: 源碼的效能，如工程師的熱血，沒有極限，等待你來引爆。編譯器有許多的限制，壓抑了源碼的效能。從源碼結構、到執行時期、到硬體架構都有限制。本次主題會從 GCC 編譯器的限制出發，介紹 Skymizer 中新穎與重要的最佳化技術，如雲端編譯與 SkyPat 分析工具，如何突破這些限制來加速源碼。希望藉由這次的機會，分享過去開發編譯器的經驗，和與會的朋友們一起 成長。
+

@@ -1,0 +1,565 @@
+html, body{
+font-size: 100%;
+font-family: 'Open Sans', sans-serif, '微軟正黑體';
+}
+
+p{
+line-height: 1.5em;
+font-size: 1.2em;
+}
+
+a{
+color:#185D93;
+text-decoration: none;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+.gridWrap{
+width: 100%;
+overflow: hidden;
+}
+
+div[class*='grid-']{
+display: inline-block;
+vertical-align: top;
+box-sizing: border-box;
+}
+
+.grid-1{
+width: 100%;
+}
+
+.grid-3-4{
+width: 75%;
+}
+
+.grid-5-8{
+width: 62.5%
+}
+
+.grid-1-2{
+width: 50%;
+}
+
+.grid-3-8{
+width: 37.5%;
+}
+
+.grid-1-4{
+width: 25%;
+}
+
+.grid-1-3{
+width: 33.33%;
+}
+
+.cover-bg{
+background: url('../images/coverbg.jpg') no-repeat;
+background-size: cover;
+background-position: 50% 40%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 70%;
+z-index: -999;
+}
+
+nav{
+position: fixed;
+top: 2em;
+right: 2em;
+z-index: 100;
+}
+
+nav ul{
+list-style: none;
+margin: 0;
+padding: 0;
+background-color: #E45218;
+}
+
+nav ul li{
+display: inline-block;
+}
+
+nav a{
+text-decoration: none;
+color: #fff;
+padding: 8px 10px;
+display: inline-block;
+-webkit-transition: background-color 0.2s;
+transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active{
+background-color: #992108;
+text-decoration: none;
+}
+
+#navbar-mBtn{
+background-color: #E45218;
+display:none;
+cursor: pointer;
+width: 44px;
+height: 44px;
+}
+
+#navbar-mBtn img{
+width: 32px;
+padding: 6px 4px 6px 8px;
+}
+
+.header{
+margin-top: 15%;
+text-align: center;
+}
+
+.header h1{
+font-size: 5em;
+color: #FFF;
+font-weight: 700;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+margin: 0.4em 0 0 0;
+}
+
+.header span{
+font-size: 4em;
+font-weight: 700;
+color: #fff;
+padding: 4px 10px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contentWrap{
+position: absolute;
+top: 70%;
+left: 0;
+right: 0;
+background-color: #f1f1f1;
+-webkit-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
+box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
+overflow: hidden;
+}
+
+#socialPanel{
+text-align:right;
+margin: 1em;
+font-size: 1px;
+}
+
+#socialPanel div{
+vertical-align: middle !important;
+margin: 0 6px !important;
+display: inline-block;
+}
+
+#socialPanel div iframe{
+vertical-align: middle;
+}
+
+.section{
+margin: 4em auto 6em auto;
+width: 80%;
+max-width: 960px;
+}
+
+.sectionExpand{
+width: 100%;
+max-width: none;
+background-color: #252525;
+color: #fff;
+}
+
+.secHeader{
+text-align: center;
+margin: 2em 0;
+}
+
+.secHeader:before{
+width: 12px;
+height: 12px;
+background-color: #E45218;
+
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+-moz-transform-origin: 0 100%;
+-ms-transform-origin: 0 100%;
+-o-transform-origin: 0 100%;
+transform-origin: 0 100%;
+content: ' ';
+display: inline-block;
+}
+
+.secHeader .secTitle{
+margin: 0.25em 0;
+font-size: 1.8em;
+font-weight: 100;
+}
+
+#info{
+text-align: center;
+margin-bottom: 4em;
+}
+
+#info span{
+color: #185D93;
+font-size: 1.2em;
+display: block;
+text-align: center;
+margin: 0.5em 0;
+}
+
+#info p{
+display: inline-block;
+border-top: 1px solid rgba(24, 93, 147, 0.3);
+margin: 0 0 1em 0;
+padding: 8px 8px;
+font-size: 1.5em;
+}
+
+#map-canvas{
+width: 100%;
+height: 420px;
+}
+
+#trafficInfo{
+padding: 2em 4em;
+}
+
+#trafficInfo h3{
+color: #E45218;
+margin: 0;
+font-weight: normal;
+}
+
+#trafficInfo p{
+font-size: 0.9em;
+font-weight: normal;
+margin: 0 0 1em 0;
+color: #ddd;
+}
+
+#scheduleTable{
+width: 100%;
+border: 1px solid #aaa;
+background-color: #fff;
+}
+
+#scheduleTable th,td{
+padding: 14px 10px;
+border: 1px solid #aaa;
+text-align: center;
+}
+
+#scheduleTable td.stableTime{
+}
+
+#scheduleTable tr.spanrow td:last-child{
+background-color: #ddd;
+}
+
+#scheduleTable tr:not(.spanrow) td:last-child{
+text-align: left;
+}
+
+.speakerCard{
+margin-bottom: 5em;
+}
+.speakerCard h3, h4{
+margin: 0.5em 0;
+}
+
+.speakerCard p{
+font-size: 1em;
+margin: 0;
+}
+
+.spkrPic{
+width: 50%;
+margin-left: 30%;
+border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+}
+
+.spkrName{
+color: #185D93;
+margin: 0.25em 0;
+}
+
+.spkrTopic{
+border-left: 4px solid #aaa;
+padding-left: 8px;
+margin-top: 1.5em;
+}
+
+.workerCard{
+text-align: center;
+margin: 1em 0;
+}
+
+.workerCard  img{
+width: 30%;
+border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+}
+
+.workerName{
+color: #444;
+margin: 0.25em 0;
+}
+
+.workerDesc{
+color: #666;
+}
+
+
+#apply{
+text-align: center;
+}
+
+#apply a{
+color: #fff;
+background-color: #EF7748;
+padding: 0.25em 1em;
+font-size: 2em;
+margin: 1em 0;
+display: inline-block;
+box-shadow: 2px 2px 5px #B33B0B;
+}
+
+#apply a:hover{
+text-decoration: none;
+background-color: #E45218;
+}
+
+footer{
+text-align: center;
+font-size: 0.9em;
+color: #777;
+padding: 3em 0 2em 0;
+}
+
+footer a{
+color: #777;
+text-decoration: underline;
+}
+
+
+/*** responsive ***/
+@media screen and (max-width: 1415px) {
+	html,body{
+	
+	}
+	#map-canvas{
+		height: 440px;
+	}
+	#trafficInfo{
+		padding: 2em 2em;
+	}
+	
+	#navbar ul{
+		display: block;
+	}
+	
+}
+
+@media screen and (max-width: 1270px) {
+
+	.grid-5-8{
+		width: 50%;
+	}
+	.grid-3-8{
+		width: 50%;
+	}
+	#map-canvas{
+		height: 440px;
+	}
+	#trafficInfo{
+		padding: 2em 2em;
+	}
+
+	#navbar ul{
+		display: block;
+	}
+	
+}
+
+@media screen and (max-width: 960px){
+	
+	.section{
+		width: 90%;
+	}
+	
+	.sectionExpand{
+		width: 100%;
+	}
+	
+	.grid-5-8{
+		width: 100%;
+	}
+	.grid-3-8{
+		width: 100%;
+	}
+	
+	#map-canvas{
+		height: 280px;
+	}
+	#trafficInfo{
+		padding: 2em 4em;
+	}
+	
+	.header h1{
+		font-size: 4em;
+	}
+	
+	#navbar ul{
+		display: block;
+	}
+	
+	.spkrPic{
+		width: 65%;
+		margin-left: 15%;
+	}
+	
+	.workerCard img{
+		width: 40%;
+	}
+	
+}
+
+@media screen and (max-width: 641px){
+
+	body, html{
+		font-size: 90%;
+	}
+
+	div[class*='grid-']{
+		width: 100%;
+	}
+	
+	div .grid-1-3{
+		width: 50%;
+	}
+	
+	#socialPanel{
+		margin: 0 0 -2em 0;
+	}
+	#socialPanel div {
+		margin: 12px 8px !important;
+		display: block !important;
+		width: 50%;
+		text-align: left;
+	}
+	
+	.section{
+		width: 90%;
+	}
+	
+	.sectionExpand{
+		width: 100%;
+	}
+	
+	#map-canvas{
+		height: 180px;
+	}
+	
+	#trafficInfo{
+	padding: 1em;
+	}
+	
+	.cover-bg{
+	background-position: 70% 40%;
+	}
+	
+	.header{
+		margin-top: 45%;
+	}
+	.header h1{
+		font-size: 3em;
+	}
+
+	.header span{
+		font-size: 3em;
+	}
+	
+	#navbar{
+		top: 1em;
+		right: 1em;
+		text-align: right;
+	}
+
+	#navbar-mBtn{
+		display: inline-block;
+	}
+	
+	#navbar ul{
+		margin-top: -4px;
+		text-align: left;
+		transition: all 0.3s;
+		display: none;
+	}
+	
+	#navbar li{
+		display: block;
+	}
+	
+	#navbar a{
+		font-size: 1.5em;
+		padding: 15px 30px;
+		display: block;
+	}
+	
+	#scheduleTable thead{
+		display:none;
+	}
+	
+	#scheduleTable td{
+		display: block;
+		border: 0;
+	}
+	
+	#scheduleTable tr.spanrow td:last-child{
+		background-color: initial;
+	}
+	
+	#scheduleTable .stableTime{
+		background-color: #ddd;
+	}
+	
+	#scheduleTable tr:not(.spanrow) td:nth-child(2){
+		width: 35%;
+		display:inline-block;
+		box-sizing: border-box;
+	}
+	#scheduleTable tr:not(.spanrow) td:nth-child(3){
+		width: 65%;
+		display:inline-block;
+		box-sizing: border-box;
+		border-left: 1px solid #eee;
+	}
+	
+	.spkrPic{
+		width: 40%;
+		margin: 0 30%;
+	}
+	.spkrName{
+		text-align:center;
+		margin: 1em 0;
+		font-size: 1.5em;
+	}
+	
+	.workerCard img{
+		width: 50%;
+	}
+	
+}
