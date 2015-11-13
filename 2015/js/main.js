@@ -27,7 +27,7 @@ $(document).ready(function() {
 var map;
 
 function reloadMap() {
-	center = map.getCenter()
+	center = map.getCenter();
 	google.maps.event.trigger(map, 'resize');
 	map.setZoom( map.getZoom() );
 	map.setCenter( center );
