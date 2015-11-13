@@ -10,7 +10,13 @@ $(document).ready(function() {
 			hideClass.removeClass("sectionHide");
 			hideClass.addClass("sectionShow");
 			hideClass.hide();
-			hideClass.fadeIn("slow");
+			/* google map reload */
+			if( hideClass.attr("id") === "traffic" ) {
+				hideClass.fadeIn("slow", reloadMap);
+			}
+			else {
+				hideClass.fadeIn("slow");
+			}
 		}
 		$(this).parents().find('.active').removeClass('active');
 		$(this).parent().addClass('active');
@@ -18,6 +24,14 @@ $(document).ready(function() {
     });
 });
 
+var map;
+
+function reloadMap() {
+	center = map.getCenter()
+	google.maps.event.trigger(map, 'resize');
+	map.setZoom( map.getZoom() );
+	map.setCenter( center );
+}
 
 function initGoogleMap() {
 
@@ -34,7 +48,7 @@ function initGoogleMap() {
 	}
 	];
 
-	var map = new google.maps.Map(document.getElementById('map'), {
+	map = new google.maps.Map(document.getElementById('map'), {
 	center: new google.maps.LatLng(23.559200, 120.465990),
 	scrollwheel: false,
 	styles: styleArray,
