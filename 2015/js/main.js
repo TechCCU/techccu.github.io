@@ -60,3 +60,7 @@ function initGoogleMap() {
 		map: map
 	});
 }
+
+function regnow() {
+	window.open( "http://techccu.kktix.cc/events/techccuworkshop2015");
+}
