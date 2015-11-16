@@ -116,10 +116,6 @@ section .sectionShow {
 	text-align: center;
 }
 
-.speaker-title {
-	text-align: center;
-}
-
 .staff {
 	width: 30%;
 	display: inline-block;
@@ -169,8 +165,8 @@ footer {
 	.container { 
 		max-width: 1780px;
 	}
-	.speaker-title {
-		text-align: center
+	.speaker-content {
+		text-align: left;
 	}
 }
 
@@ -184,8 +180,8 @@ footer {
 	.header h1 {
 		font-size: 4em;
 	}
-	.speaker-title {
-		text-align: center;
+	.speaker-content {
+		text-align: left;
 	}
 }
 
@@ -198,9 +194,6 @@ footer {
 	}
 	.header h1 {
 		font-size: 3.5em;
-	}
-	.speaker-content {
-		text-align: left;
 	}
 	.speaker-title {
 		text-align: left;
