@@ -108,6 +108,10 @@ section .sectionShow {
 }
 
 .speaker-content {
+	text-align: left;
+}
+
+.speaker-content h3 {
 	text-align: center;
 }
 
