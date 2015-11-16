@@ -89,6 +89,11 @@ section .sectionShow {
     width: 60%;
 }
 
+.speaker {
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
 .speaker-pic {
 	display: block;
 }
@@ -108,10 +113,10 @@ section .sectionShow {
 }
 
 .speaker-content {
-	text-align: left;
+	text-align: center;
 }
 
-.speaker-content h3 {
+.speaker-title {
 	text-align: center;
 }
 
@@ -164,8 +169,8 @@ footer {
 	.container { 
 		max-width: 1780px;
 	}
-	.speaker-content {
-		text-align: left;
+	.speaker-title {
+		text-align: center
 	}
 }
 
@@ -179,8 +184,8 @@ footer {
 	.header h1 {
 		font-size: 4em;
 	}
-	.speaker-content {
-		text-align: left;
+	.speaker-title {
+		text-align: center;
 	}
 }
 
@@ -193,5 +198,11 @@ footer {
 	}
 	.header h1 {
 		font-size: 3.5em;
+	}
+	.speaker-content {
+		text-align: left;
+	}
+	.speaker-title {
+		text-align: left;
 	}
 }
