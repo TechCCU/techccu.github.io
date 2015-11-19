@@ -22,6 +22,13 @@ $(document).ready(function() {
 		$(this).parent().addClass('active');
 		activeClass.fadeOut( "slow", showHide);
     });
+	// check URI has hashtag or not
+	var ht = window.location.hash;
+	if( ht !== undefined) {
+		var navbtn = $('nav a[href="' + ht + '"]');
+		if( navbtn.length == 1)
+			navbtn.click();
+	}
 });
 
 var map;

@@ -87,6 +87,8 @@ section .sectionShow {
 #scheduleTable {
     margin: auto;
     width: 60%;
+    text-align: left;
+    padding: 0px 2px;
 }
 
 .speaker {
