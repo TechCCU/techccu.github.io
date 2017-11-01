@@ -1,3 +1,6 @@
 [submodule "2016"]
 	path = 2016
 	url = https://github.com/techccu/2016-landpage
+[submodule "2017-landpage"]
+	path = 2017-landpage
+	url = https://github.com/TechCCU/2017-landpage.git
